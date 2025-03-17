@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header {
+    height: 8vh;
+    background-color:#ffc300;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 300px;
+    height: calc(100vh - 8vh);
+    background-color:#003566;
+    position: fixed;
+    top: 58px;
+}
+
+.maincontent {
+    margin-left: 20%;
+    position: relative;
+    top: 8vh;
+}

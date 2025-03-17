@@ -6,7 +6,14 @@ import "./App.css";
 // import Table from "./componets/Table";
 // import Home from "./componets/Home";
 // import Array from "./componets/Array";
-import Object from "./componets/Object";
+// import Object from "./componets/Object";
+// import ClassNva from "./componets/ClassNva";
+// import CounterFunction from "./componets/CounterFunction";
+// import Classcounter from "./componets/Counterclass";
+// import Formfunction from "./componets/Formfunction";
+// import Formclass from "./componets/Formclass";
+// import ObjfunctionForm from "./componets/ObjfunctionForm";
+import ObjArrayForm from "./ObjArrayForm";
 
 function App({data}) {
   // let name = "Alice";
@@ -19,8 +26,15 @@ function App({data}) {
       {/* <Table/> */}
       {/* <Home/> */}
       {/* <Array /> */}
-      <Object/>
-    </>
+      {/* <Object/> */}
+      {/* <ClassNva/> */}
+      {/* <CounterFunction/> */}
+       {/* <Classcounter/> */}
+       {/* <Formfunction/> */}
+       {/* <Formclass/> */}
+       {/* <ObjfunctionForm/> */}
+       <ObjArrayForm/>
+       </>
   );
 }
 
