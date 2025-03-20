@@ -13,7 +13,11 @@ import "./App.css";
 // import Formfunction from "./componets/Formfunction";
 // import Formclass from "./componets/Formclass";
 // import ObjfunctionForm from "./componets/ObjfunctionForm";
-import ObjArrayForm from "./ObjArrayForm";
+// import ObjArrayForm from "./ObjArrayForm";
+// import User_Form from "./componets/User_Form";
+// import Tableimage from "./componets/Tableimage";
+import Comment from "./componets/Comment";
+
 
 function App({data}) {
   // let name = "Alice";
@@ -33,7 +37,10 @@ function App({data}) {
        {/* <Formfunction/> */}
        {/* <Formclass/> */}
        {/* <ObjfunctionForm/> */}
-       <ObjArrayForm/>
+       {/* <ObjArrayForm/> */}
+       {/* <User_Form/> */}
+       {/* <Tableimage/> */}
+       <Comment/>
        </>
   );
 }
