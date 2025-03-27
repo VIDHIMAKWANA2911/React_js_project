@@ -16,7 +16,19 @@ import "./App.css";
 // import ObjArrayForm from "./ObjArrayForm";
 // import User_Form from "./componets/User_Form";
 // import Tableimage from "./componets/Tableimage";
-import Comment from "./componets/Comment";
+// import Comment from "./componets/Comment";
+//  import MultipleField from "./componets/MultipleField";
+// import MultipleFiles from "./componets/MultipleFiles";
+// import SingleState from "./componets/SingleState";
+// import ObjectState from "./componets/ObjectState";
+// import Practices from "./componets/Practices";
+
+///////////////////// Bootstarap link ///////////////////
+// import NavbarBootstrap from "./Bootstrap.jsx/NavbarBootstrap";
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
+// import { Routes, Route } from "react-router-dom";
+
 
 
 function App({data}) {
@@ -40,8 +52,17 @@ function App({data}) {
        {/* <ObjArrayForm/> */}
        {/* <User_Form/> */}
        {/* <Tableimage/> */}
-       <Comment/>
-       </>
+       {/* <Comment/> */}
+      {/* <MultipleField/> */}
+       {/* <MultipleFiles/> */}
+      {/* <SingleState/> */}
+      {/* <ObjectState/> */}
+      {/* <Practices/> */}
+
+      {/* <NavbarBootstrap/> */}
+      {/* <NavbarReactBootstrap/> */}
+
+</>
   );
 }
 
