@@ -57,7 +57,7 @@ export default function Home() {
       {/* <button onClick={()=>navigate("/About",{state:{fruits}})}  style={{padding:"10px 10px 10px 10px",marginLeft:'20px',borderRadius:"20px"}}>About Components</button> */}
 
       {/* Obj print krava mate */}
-      <button onClick={()=>navigate("/About",{state : {obj}})}>About Component</button>
+      <button onClick={()=>navigate("/About",{state : {obj}})}  >About Component</button>
       
       {/* Array of object print krva mate*/}
        {/* <button onClick={() => navigate("/about", { state: { arrObj } })}style={{padding:"10px 10px 10px 10px",marginLeft:'20px',borderRadius:"20px"}}>

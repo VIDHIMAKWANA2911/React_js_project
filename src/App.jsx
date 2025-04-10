@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+// import { Route, Routes } from "react-router-dom";
 // import Navbar from "./componets/Navbar";
 // import Datashow from "./componets/Datashow";
 // import Card from "./componets/Card";
@@ -25,9 +26,9 @@ import "./App.css";
 
 ///////////////////// Bootstarap link ///////////////////
 // import NavbarBootstrap from "./Bootstrap.jsx/NavbarBootstrap";
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/js/bootstrap.bundle.min.js"
-import FormBootstarp from "./Bootstrap.jsx/FormBootstarp";
+// import "bootstrap/dist/css/bootstrap.min.css"
+// import "bootstrap/dist/js/bootstrap.bundle.min.js"
+// import FormBootstarp from "./Bootstrap.jsx/FormBootstarp";
 
 
 /////////////////////// Navbar - Routing Linkk ///////////////////////
@@ -40,14 +41,34 @@ import FormBootstarp from "./Bootstrap.jsx/FormBootstarp";
 // import Services from "./Navbar_Routing/Services";
 
 
-// import Main from "./YoutubeClone/Main";
+//  import Main from "./YoutubeClone/Main";
+// import { Route, Routes } from "react-router-dom";
+//  import Live from "./YoutubeClone/Live";
+
 
 /////////////////// Navgations Link /////////////////////
-// import NavgationNavbar from "./Navgations/NavgationNavbar";
-// import Home from "./Navgations/Home";
-// import About from "./Navgations/About";
-// import NavgationForm from "./Navgations/NavgationForm";
-// import NavgationsData from "./Navgations/NavgationsData";
+//  import Navbar from "./Navigation/Navbar";
+//  import Home from "./Navigation/Home";
+//  import About from "./Navigation/About";
+//  import Form from "./Navigation/Form";
+//  import NavData from "./Navigation/NavData";
+
+
+//////////////////Prop_Drilling///////////////
+ //import Prop from "./Prop_Drilling/Prop";
+
+
+/////////////////loacalstorage_project////////////////
+// import SingleImage from "./Localstorge_Project/SingleImage";
+//  import MultipleImage from "./Localstorge_Project/MultipleImage";
+
+////////////////Navigation_project///////////////////
+import { Route, Routes } from "react-router-dom";
+import SingleImages from "./Navigation_Project/SingleImages";
+import SinglesImageDataShow from "./Navigation_Project/SingleImagesDataShow";
+
+// import MultipleImages from "./Navigation_Project/MultipleImages";
+// import MultiplesImageDataShow from "./Navigation_Project/MultiplesImageDataShow";
 
 
 function App({data}) {
@@ -80,13 +101,13 @@ function App({data}) {
 
       {/* <NavbarBootstrap/> */}
       {/* <NavbarReactBootstrap/> */}
-      <FormBootstarp/>
+      {/* <FormBootstarp/> */}
 
 {/* Navbar Routing link */}
       {/* <Navbar_Rotuting/> */}
 
-
-{/* <Routes>
+{/* 
+<Routes>
   <Route path="/home1" element={<Home1/>}/>
    <Route path="/about1" element={<About1/>}/>
    <Route path="/blog1" element={<Blog1/>}/>
@@ -95,20 +116,41 @@ function App({data}) {
 </Routes> */}
 
 {/* YOUTUBE COLNE LINK  */}
- {/* <Main/> */}
-
+{/* <Main/> */}
+ {/* <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/category/:Live" element={<Live />} />
+ </Routes>
 
 {/* Navgations Linkkk */}
-{/* <NavgationNavbar/> */}
-{/* 
-<Routes>
-  <Route path="/Home" element={<Home />} />
-  <Route path="/About" element={<About />} />
-  <Route path="/NavgationForm" element={<NavgationForm />} />
-  <Route path="/NavgationsData" element={<NavgationsData />} /> 
+{/* <Navbar/> */}
+{/* <Routes>
+  <Route path="/Home" element={<Home/>}/>
+  <Route path="/About" element={<About/>}/>
+  <Route path="/Form" element={<Form/>}/>
+  <Route path="/NavData" element={<NavData/>}/>
 </Routes> */}
 
+{/* Prop Drilling */}
+{/* <Prop/> */}
+
+{/* Localstorge_Project */}
+{/* <SingleImage/>
+ <MultipleImage/> */}
+
+{/* Navigation_Project */}
+  {/* <Routes>
+        <Route path="/" element={<MultipleImages />} />
+        <Route path="/MultiplesImageDataShow" element={<MultiplesImageDataShow />} />
+  </Routes> */}
+  <Routes>
+    <Route path="/" element={<SingleImages />} />
+    <Route path="/SinglesImageDataShow" element={<SinglesImageDataShow />} />
+  </Routes>
+
+
 </>
+
   );
 }
 

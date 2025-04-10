@@ -32,3 +32,11 @@ nav ul li a:hover {
     color: #dad7da;
     transform: scale(0.5);
 }
+
+.sidebar {
+    width: 100px;
+    height: 95vh;
+    background-color: #a3b18a;
+    position: fixed;
+    top: 65px;
+}
