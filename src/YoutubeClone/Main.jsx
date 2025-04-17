@@ -10,6 +10,9 @@ export default function Main() {
     "Dramedy", "Grammar"
   ];
 
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+
    const videos = [
     {
       title: "React Basics",
@@ -390,17 +393,20 @@ export default function Main() {
               }}>
                 {category}
               </div>
+              
             </Link>
           ))}
         </div>
         {/* Main Content */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(400px, 1fr))", gap: "20px", marginTop: "20px", background: "#181818", paddingBottom: "20px",marginLeft:"50px",overflowX:"hidden" }}>
-          {videos.map((video, index) => (
-            <div key={index} style={{ background: "#202020", padding: "10px", borderRadius: "10px" }}>
-              <img src={video.thumbnail} alt={video.title} style={{ width: "100%", borderRadius: "10px" ,height:"200px"}} />
-              <h3 style={{ fontSize: "25px", marginTop: "10px" }}>{video.title}</h3>
-              <p style={{ fontSize: "20px", color: "#bbb" }}>{video.channel}</p>
-              <p style={{ fontSize: "18px", color: "#888" }}>{video.views} • {video.time}</p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "20px", padding: "20px" , background:"black" }}>
+          {filteredVideos.map((video, index) => (
+            <div key={index} style={{ background: "#202020", borderRadius: "10px", overflow: "hidden" }}>
+              <img src={video.thumbnail} alt={video.title} style={{ width: "100%", height: "180px", objectFit: "cover" }} />
+              <div style={{ padding: "10px" }}>
+                <h3 style={{ fontSize: "16px", margin: "0 0 10px" }}>{video.title}</h3>
+                <p style={{ fontSize: "14px", color: "#aaa", margin: "0" }}>{video.channel}</p>
+                <p style={{ fontSize: "12px", color: "#666", margin: "5px 0 0" }}>{video.views} • {video.time}</p>
+              </div>
             </div>
           ))}
         </div>

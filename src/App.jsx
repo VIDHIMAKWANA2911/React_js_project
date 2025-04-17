@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import Seraching from "./Seraching&Sorting.jsx/Seraching";
 // import { Route, Routes } from "react-router-dom";
 // import Navbar from "./componets/Navbar";
 // import Datashow from "./componets/Datashow";
@@ -44,6 +45,7 @@ import "./App.css";
 //  import Main from "./YoutubeClone/Main";
 // import { Route, Routes } from "react-router-dom";
 //  import Live from "./YoutubeClone/Live";
+// import Serach from "./Seraching_Project/Serach";
 
 
 /////////////////// Navgations Link /////////////////////
@@ -63,9 +65,9 @@ import "./App.css";
 //  import MultipleImage from "./Localstorge_Project/MultipleImage";
 
 ////////////////Navigation_project///////////////////
-import { Route, Routes } from "react-router-dom";
-import SingleImages from "./Navigation_Project/SingleImages";
-import SinglesImageDataShow from "./Navigation_Project/SingleImagesDataShow";
+// import { Route, Routes } from "react-router-dom";
+// import SingleImages from "./Navigation_Project/SingleImages";
+// import SinglesImageDataShow from "./Navigation_Project/SingleImagesDataShow";
 
 // import MultipleImages from "./Navigation_Project/MultipleImages";
 // import MultiplesImageDataShow from "./Navigation_Project/MultiplesImageDataShow";
@@ -117,10 +119,10 @@ function App({data}) {
 
 {/* YOUTUBE COLNE LINK  */}
 {/* <Main/> */}
- {/* <Routes>
+  {/* <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/category/:Live" element={<Live />} />
- </Routes>
+        <Route path="/category/Live" element={<Live />} />
+ </Routes> */}
 
 {/* Navgations Linkkk */}
 {/* <Navbar/> */}
@@ -143,10 +145,15 @@ function App({data}) {
         <Route path="/" element={<MultipleImages />} />
         <Route path="/MultiplesImageDataShow" element={<MultiplesImageDataShow />} />
   </Routes> */}
-  <Routes>
+  {/* <Routes>
     <Route path="/" element={<SingleImages />} />
     <Route path="/SinglesImageDataShow" element={<SinglesImageDataShow />} />
-  </Routes>
+  </Routes> */}
+
+<Seraching/>
+
+{/* <Serach/> */}
+
 
 
 </>
