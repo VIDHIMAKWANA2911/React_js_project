@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import Seraching from "./Seraching&Sorting.jsx/Seraching";
+
+// import Seraching from "./Seraching&Sorting.jsx/Seraching";
 // import { Route, Routes } from "react-router-dom";
 // import Navbar from "./componets/Navbar";
 // import Datashow from "./componets/Datashow";
@@ -68,9 +69,28 @@ import Seraching from "./Seraching&Sorting.jsx/Seraching";
 // import { Route, Routes } from "react-router-dom";
 // import SingleImages from "./Navigation_Project/SingleImages";
 // import SinglesImageDataShow from "./Navigation_Project/SingleImagesDataShow";
-
 // import MultipleImages from "./Navigation_Project/MultipleImages";
 // import MultiplesImageDataShow from "./Navigation_Project/MultiplesImageDataShow";
+
+///////////////// API (Application programming Interface) ////////////////////
+// import Post from "./API/Post";
+// import Image from "./API/Image";
+// import Comment from "./API/Comment";
+// import Album from "./API/Album";
+ //import Todos from "./API/Todos";
+ //import User_random from "./API/User_random";
+// import User_API from "./API/User_API";
+// import Fake_Store_Api from "./API/Fake_Store_Api";
+
+
+//////////////////////////////// API (AXIOS) //////////////////////////////////
+// import Post from "./Axios_API/Post";
+// import Comment from "./Axios_API/Comment";
+// import Album from "./Axios_API/Album";
+ //import User_random from "./Axios_API/User_random";
+// import Image from "./Axios_API/Image";
+// import Todos from "./Axios_API/Todos";
+import Fake_Store_Api from "./Axios_API/Fake_Store_Api";
 
 
 function App({data}) {
@@ -137,8 +157,8 @@ function App({data}) {
 {/* <Prop/> */}
 
 {/* Localstorge_Project */}
-{/* <SingleImage/>
- <MultipleImage/> */}
+{/* <SingleImage/> */}
+ {/* <MultipleImage/> */}
 
 {/* Navigation_Project */}
   {/* <Routes>
@@ -150,9 +170,28 @@ function App({data}) {
     <Route path="/SinglesImageDataShow" element={<SinglesImageDataShow />} />
   </Routes> */}
 
-<Seraching/>
+{/* <Seraching/> */}
 
 {/* <Serach/> */}
+
+{/* API */}
+{/* <Post/> */}
+{/* <Image/> */}
+{/* <Comment/> */}
+{/* <Album/> */}
+{/* <Todos/> */}
+{/* <User_random/> */}
+{/* <User_API/> */}
+{/* <Fake_Store_Api/> */}
+
+{/* Axios API */}
+{/* <Post/> */}
+{/* <Comment/> */}
+{/* <Album/> */}
+{/* <Image/> */}
+{/* <User_random/> */}
+{/* <Todos/> */}
+<Fake_Store_Api/>
 
 
 
