@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
+import Dogapi from "./Axios_API/DogApi";
+// import Dogapi from "./API/DogApi";
 
 // import Seraching from "./Seraching&Sorting.jsx/Seraching";
 // import { Route, Routes } from "react-router-dom";
@@ -90,7 +92,7 @@ import "./App.css";
  //import User_random from "./Axios_API/User_random";
 // import Image from "./Axios_API/Image";
 // import Todos from "./Axios_API/Todos";
-import Fake_Store_Api from "./Axios_API/Fake_Store_Api";
+// import Fake_Store_Api from "./Axios_API/Fake_Store_Api";
 
 
 function App({data}) {
@@ -183,6 +185,7 @@ function App({data}) {
 {/* <User_random/> */}
 {/* <User_API/> */}
 {/* <Fake_Store_Api/> */}
+{/* <Dogapi/> */}
 
 {/* Axios API */}
 {/* <Post/> */}
@@ -191,7 +194,8 @@ function App({data}) {
 {/* <Image/> */}
 {/* <User_random/> */}
 {/* <Todos/> */}
-<Fake_Store_Api/>
+{/* <Fake_Store_Api/> */}
+<Dogapi/>
 
 
 
